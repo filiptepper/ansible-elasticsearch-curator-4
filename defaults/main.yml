@@ -1,0 +1,16 @@
+elasticsearch_curator_config: |
+  client:
+    hosts:
+      - 127.0.0.1
+    port: 9200
+    timeout: 30
+
+elasticsearch_curator_actions:
+
+elasticsearch_curator_crontab:
+  - {
+    name: "daily elasticsearch-curator job",
+    job: "/usr/local/bin/curator --config /etc/elasticsearch-curator/curator.yml /etc/elasticsearch-curator/actions.yml",
+    minute: 0,
+    hour: 1
+  }

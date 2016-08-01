@@ -1,0 +1,16 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: filiptepper
+  description: Elasticsearch Curator 4
+  license: MIT
+  min_ansible_version: 1.4
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+  galaxy_tags:
+    - elasticsearch
+    - system
+    - monitoring
